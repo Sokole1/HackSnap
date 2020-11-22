@@ -12,7 +12,7 @@
 <body>
     <h1>HackSnap</h1>
     <h3 id="intro">Condensed resource center for IB students<br> including past papers, markschemes.</h3>
-    <button id="startbutton">Start Searching</button>
+    <button id="startbutton" type="button">Start Searching</button>
     <div>
         <h2>Find Group</h2>
 
@@ -42,6 +42,12 @@
                 <option value="November">November</option>
             </select>
             <select name="examYear" id="yearDropDown" class="dropDown">
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
                 <option value="2016">2016</option>
                 <option value="2017">2017</option>
                 <option value="2018">2018</option>
@@ -50,9 +56,6 @@
             <button>Submit</button>
         </form>
     
-    </div>
-    <h2>Exams</h2>
-    <div>
     </div>
     <ul>
         {% for item in items %}

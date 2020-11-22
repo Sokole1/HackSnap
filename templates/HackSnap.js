@@ -1,7 +1,7 @@
 var groupValue = document.getElementById("groupDropDown");
 var subjectDropArea = document.getElementById("subjectArea");
 
-//Check the subject group selected
+//Check which subject group selected
 function checkSubjGroup(){
     console.log(document.getElementById("groupDropDown").value);
     switch(document.getElementById("groupDropDown").value){

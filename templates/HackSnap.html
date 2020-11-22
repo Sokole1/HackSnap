@@ -10,9 +10,11 @@
     <title>HackSnap</title>
 </head>
 <body>
-    <h1>HackSnap</h1>
-    <h3 id="intro">Condensed resource center for IB students<br> including past papers, markschemes.</h3>
-    <button id="startbutton">Start Searching</button>
+    <div id="introPage">
+        <img src="Hacksnap logo.png" alt="HackSnap" id="webLogo">
+        <h3 id="intro">Condensed resource center for IB students<br> including past papers, markschemes.</h3>
+        <button id="startButton" type="button">Start Searching</button>
+    </div>
     <div>
         <h2>Find Group</h2>
 
@@ -25,7 +27,7 @@
                 <option value="Group 5 - Mathematics">Group 5: Mathematics</option>
                 <option value="Group 6 - The Arts">Group 6: The Arts</option>
             </select>
-            <button type="button" onclick="checkSubjGroup()">Next</button>
+            <button type="button" onclick="checkSubjGroup()" class="nextButton">Next</button>
             <h2>Subject</h2>
             <div id="subjectArea">
                 <select name="specificSubject" id="subjectDropDown" class="dropDown">
@@ -34,6 +36,7 @@
                     <option value="HL">HL</option>
                     <option value="SL">SL</option>
                 </select>
+                <button type="button" class="nextButton">Next</button>
             </div>
             </datalist>
             <h2>Exam Date</h2>
@@ -42,6 +45,12 @@
                 <option value="November">November</option>
             </select>
             <select name="examYear" id="yearDropDown" class="dropDown">
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
                 <option value="2016">2016</option>
                 <option value="2017">2017</option>
                 <option value="2018">2018</option>
@@ -51,9 +60,8 @@
         </form>
     
     </div>
-    <h2>Exams</h2>
-    <div>
-    </div>
+    <h2>Exam</h2>
+    <div></div>
     <ul>
         {% for item in items %}
             <li>{{ item }}</li>

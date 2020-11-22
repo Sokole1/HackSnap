@@ -86,7 +86,7 @@ def get_link(group, subject, level, year, month):
         raise LookupError
     print(url)
 
-get_link("2", "French", "HL", "2017", "November")
+get_link("3", "Geography", "HL", "2017", "November")
 
 #https://examsnap.io/files/index.php/s/IB_Past_Papers?path=%2FGroup%201%20-%20Studies%20in%20Language%20and%20Literature%2FEnglish%20A%20Language%20and%20literature%20HL%2F2013%20May%20Examination%20Session
 # English HL https://examsnap.io/files/index.php/s/IB_Past_Papers?path=%2FGroup%201%20-%20Studies%20in%20Language%20and%20Literature%2FEnglish%20A%20Language%20and%20literature%20HL%2F2014%20November%20Examination%20Session

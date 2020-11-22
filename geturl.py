@@ -1,7 +1,3 @@
-import os
-import sys
-import time
-
 # group, subject, level, year, month
 def english(subject, level, year, month):
     return f"https://examsnap.io/files/index.php/s/IB_Past_Papers?path=%2FGroup%201%20-%20Studies%20in%20Language%20and%20Literature%2FEnglish%20A%20Language%20and%20literature%20HL%2F{year}%20{month}%20Examination%20Session"
@@ -25,26 +21,24 @@ def arts(subject, level, year, month):
 
 def get_link(group, subject, level, year, month):
 
-    time.sleep(3)
-    if group == "1":
+    if group == "Group 1 - Studies in Language and Literature":
         url = english(subject, level, year, month)
-    elif group == "2":
+    elif group == "Group 2 - Language Acquisition":
         url = languageB(subject, level, year, month)
-    elif group == "3":
+    elif group == "Group 3 - Individuals and Societies":
         url = socials(subject, level, year, month)
-    elif group == "4":
+    elif group == "Group 4 - Experimental Sciences":
         url = science(subject, level, year, month)
-    elif group == "5":
+    elif group == "Group 5 - Mathematics":
         url = math(subject, level, year, month)
-    elif group == "6":
+    elif group == "Group 6 - The Arts":
         url = arts(subject, level, year, month)
     else:
         print("Something went terribly wrong")
         raise LookupError
-    print(url)
+
     return url
 
-get_link("3", "ITGS", "HL", "2012", "May")
 
 #English
 #French

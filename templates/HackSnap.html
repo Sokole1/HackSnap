@@ -12,14 +12,18 @@
 <body>
     <div id="introPage">
         <img src="Hacksnap logo.png" alt="HackSnap" id="webLogo">
-        <h3 id="intro">Condensed resource center for IB students<br> including past papers, markschemes.</h3>
-        <button id="startButton" type="button">Start Searching</button>
+        <h3 id="intro">Condensed resource center for IB students<br> including past papers and markschemes.</h3>
+        <div class="text-center">
+            <a href="#searchPage">
+            <button id="startButton" type="button" class="btn btn-primary">Start Searching</button>
+            </a>
+        </div>
     </div>
-    <div>
-        <h2>Find Group</h2>
+    <div id="searchPage" class="text-center">
+        <h2 class="searchText">Find Group</h2>
 
         <form action="/" method="post">
-            <select name="subjectGroup" id="groupDropDown" class="dropDown">
+            <select name="subjectGroup" id="groupDropDown">
                 <option value="Group 1 - Studies in Language and Literature">Group 1: Studies in Language and Literature</option>
                 <option value="Group 2 - Language Acquisition">Group 2: Language Acquisition</option>
                 <option value="Group 3 - Individuals and Societies">Group 3: Individuals and Societies</option>
@@ -27,8 +31,8 @@
                 <option value="Group 5 - Mathematics">Group 5: Mathematics</option>
                 <option value="Group 6 - The Arts">Group 6: The Arts</option>
             </select>
-            <button type="button" onclick="checkSubjGroup()" class="nextButton">Next</button>
-            <h2>Subject</h2>
+            <button type="button" onclick="checkSubjGroup()" class="btn btn-primary">Next</button>
+            <h2 class="searchText">Subject</h2>
             <div id="subjectArea">
                 <select name="specificSubject" id="subjectDropDown" class="dropDown">
                 </select>
@@ -36,10 +40,10 @@
                     <option value="HL">HL</option>
                     <option value="SL">SL</option>
                 </select>
-                <button type="button" class="nextButton">Next</button>
+                <button type="button" class="btn btn-primary">Next</button>
             </div>
             </datalist>
-            <h2>Exam Date</h2>
+            <h2 class="searchText">Exam Date</h2>
             <select name="examMonth" id="monthDropDown" class="dropDown">
                 <option value="May">May</option>
                 <option value="November">November</option>
@@ -56,11 +60,11 @@
                 <option value="2018">2018</option>
                 <option value="2019">2019</option>
             </select><br>
-            <button>Submit</button>
+            <button class="btn btn-primary" id="submitButton">Submit</button>
         </form>
     
     </div>
-    <h2>Exam</h2>
+    <h2 id="exam">Exam</h2>
     <div></div>
     <ul>
         {% for item in items %}

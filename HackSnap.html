@@ -11,11 +11,11 @@
 </head>
 <body>
     <h1>HackSnap</h1>
-    <h3 id="intro">Condensed resource center for IB students including past papers, markschemes.</h3>
-    <button id="startbutton" class="">Start Searching</button>
+    <h3 id="intro">Condensed resource center for IB students<br> including past papers, markschemes.</h3>
+    <button id="startbutton">Start Searching</button>
     <div>
         <h2>Find Group</h2>
-        <select name="group" id="groupDropDown" class="dropDown">
+        <select name="subjectGroup" id="groupDropDown" class="dropDown">
             <option value="group1">Group 1: Studies in Language and Literature</option>
             <option value="group2">Group 2: Language Acquisition</option>
             <option value="group3">Group 3: Individuals and Societies</option>
@@ -24,14 +24,15 @@
             <option value="group6">Group 6: The Arts</option>
         </select>
         <h2>Subject</h2>
-        <datalist id="subjectDropDown" class="dropDown">
+        <div id="subjectArea">
+        </div>
         </datalist>
         <h2>Exam Date</h2>
-        <select name="group" id="monthDropDown" class="dropDown">
+        <select name="examMonth" id="monthDropDown" class="dropDown">
             <option value="May">May</option>
             <option value="November">November</option>
         </select>
-        <select name="group" id="yearDropDown" class="dropDown">
+        <select name="examYear" id="yearDropDown" class="dropDown">
             <option value="2016">2016</option>
             <option value="2017">2017</option>
             <option value="2018">2018</option>

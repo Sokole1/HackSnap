@@ -37,7 +37,7 @@ def HackSnap():
 # def Choose():
 #     return render_template("HackSnap2.html", items=items, url=url_history)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(debug=True)
 
 # @app.route("/")

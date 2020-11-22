@@ -22,6 +22,6 @@ function checkSubjGroup(){
         default:
             console.log("no Option");
     }
-    // document.getElementById("subjectButton").innerHTML="<button type='button' onclick='checkSubjArea()' class='btn btn-primary' disabled>Next</button>"
+    document.getElementById("subjectButton").innerHTML="<button type='button' onclick='checkSubjArea()' class='btn btn-primary'>Next</button>"
 }
 

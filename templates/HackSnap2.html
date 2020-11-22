@@ -162,12 +162,9 @@
 }
     </script>
 
-    <img src="Hacksnap logo.png" alt="HackSnap" id="webLogo">
+    <img src="static/Hacksnaplogo.png" alt="HackSnap" id="webLogo">
     <h3 id="intro">Condensed resource center for IB students<br> including past papers and markschemes.</h3>
     <div class="text-center">
-        <a href="#searchPage">
-            <button id="startButton" type="button" class="btn btn-primary">Start Searching</button>
-        </a>
     </div>
     <div id="searchPage" class="text-center">
         <h2 class="searchText">Find Group</h2>
@@ -200,7 +197,7 @@
             <h2 class="searchText">Exam Date</h2>
 
             <select name="examMonthYear" id="yearDropDown" class="dropDown">
-            </select><br>
+            </select>
             <button class="btn btn-primary" id="submitButton">Submit</button>
 
 
@@ -214,18 +211,23 @@
             <th>Info</th>
             <th>Link</th>
         </tr>
-        <tr>
-            
-        </tr>
-
-
-
+            {% for key, value in url.items() %}
+                <tr>
+                    <td>{{ key }}</td>
+                    <td><a href="{{ value }}"> {{ value }} </a></td>
+                </tr>
+            {% endfor %}
+            <!-- {% for key, value in url.items() %}
+                <tr>
+                    
+                </tr>
+            {% endfor %} -->
     </table>
 
-    <ul>
+    <!-- <ul>
         {% for key, value in url.items() %}
            <a href="{{ value }}"> {{ key, value }} </a>
         {% endfor %}
-    </ul>    
+    </ul>     -->
 </body>
 </html>

@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, redirect
 from geturl import get_link
-from data import *
 
 app = Flask(__name__)
 

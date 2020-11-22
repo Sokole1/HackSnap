@@ -1,1 +1,0 @@
-EnglishALiteratureHL = {"2013": ("May", "November"), "2014": ("May", "November"), "2015": ("May", "November"), "2016": ("May", "November"), "2017": ("May", "November"), "2018": ("May", "November"), "2019": ("May")}

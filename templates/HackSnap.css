@@ -54,6 +54,17 @@ button{
     margin-top: 40px;
     text-align: center; 
 }
+table{
+    text-align: center;
+    width: 1500px;
+    border-collapse: collapse;
+}
+table, tr, th{
+    border: 1px solid black;
+    width: 1500px;
+    text-align: center;
+}
+
 
 /*dropdowns
 #groupDropDown{

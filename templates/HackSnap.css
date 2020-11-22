@@ -1,0 +1,21 @@
+/*Intro Page*/
+
+#intro{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+
+}
+button{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding: 10px;
+}
+#webLogo{
+    width: 320px;
+    margin-top: 178px;
+    margin-bottom: 59px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}

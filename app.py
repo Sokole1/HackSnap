@@ -11,28 +11,31 @@ url_history = {}
 @app.route("/", methods=["GET", "POST"])
 def HackSnap():
     if request.method == "GET":
-        return render_template("HackSnap2.html")
+        return render_template("HackSnap2.html", items=items, url=url_history)
     else:
         group = request.form.get("subjectGroup")
-        subject = "English"
+        subject = request.form.get("specificSubject")
+        subject = subject.capitalize()
         level = request.form.get("levelSelect")
-        month = request.form.get("examMonth")
-        year = request.form.get("examYear")
+        monthYear = request.form.get("examMonthYear") 
+        month, year = monthYear.split(" ", 1)
+        # month = request.form.get("examMonth")
+        # year = request.form.get("examYear")re
         items.clear()
         #items.append(group)
         items.append(subject)
         items.append(level)
         items.append(year)
         items.append(month)
-        url = get_link(group, subject, level, year, month)
+        url = get_link(group, subject, level, month, year)
         url_history[" ".join(items)] = url
-        return redirect("/select")
+        return render_template("HackSnap2.html", items=items, url=url_history)
 
     
 
-@app.route("/select")
-def Choose():
-    return render_template("HackSnap.html", items=items, url=url_history)
+# @app.route("/select")
+# def Choose():
+#     return render_template("HackSnap2.html", items=items, url=url_history)
 
 if __name__ == '__main__':
     app.run(debug=True)

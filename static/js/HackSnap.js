@@ -1,6 +1,3 @@
-var groupValue = document.getElementById("groupDropDown");
-var subjectDropArea = document.getElementById("subjectArea");
-
 function checkSubjGroup(){
     console.log(document.getElementById("groupDropDown").value);
     switch(document.getElementById("groupDropDown").value){
@@ -11,7 +8,7 @@ function checkSubjGroup(){
             document.getElementById("subjectDropDown").innerHTML="<option value='spanish'>Spanish</option><option value='french'>French</option><option value='mandarin'>Mandarin</option><option value='japanese'>Japanese</option>"
             break;
         case "Group 3 - Individuals and Societies":
-            document.getElementById("subjectDropDown").innerHTML="<option value='buisness'>Buisness</option><option value='itgs'>ITGS</option><option value='geography'>Geography</option><option value='history'>History</option>"
+            document.getElementById("subjectDropDown").innerHTML="<option value='business'>Buisness</option><option value='itgs'>ITGS</option><option value='geography'>Geography</option><option value='history'>History</option>"
             break;
         case "Group 4 - Experimental Sciences":
             document.getElementById("subjectDropDown").innerHTML="<option value='physics'>Physics</option><option value='biology'>Biology</option><option value='chemistry'>Chemistry</option>"
@@ -23,7 +20,8 @@ function checkSubjGroup(){
             document.getElementById("subjectDropDown").innerHTML="<option value='music'>Music</option>"
             break;
         default:
-            console.log("no Option")
+            console.log("no Option");
     }
+    // document.getElementById("subjectButton").innerHTML="<button type='button' onclick='checkSubjArea()' class='btn btn-primary' disabled>Next</button>"
 }
 

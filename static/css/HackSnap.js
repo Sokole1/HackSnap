@@ -1,6 +1,8 @@
+var groupValue = document.getElementById("groupDropDown");
+var subjectDropArea = document.getElementById("subjectArea");
+
 function checkSubjGroup(){
     console.log(document.getElementById("groupDropDown").value);
-    document.getElementById("areaButton").disabled = true;
     switch(document.getElementById("groupDropDown").value){
         case "Group 1 - Studies in Language and Literature":
             document.getElementById("subjectDropDown").innerHTML="<option value='English'>English</option>"
@@ -21,8 +23,6 @@ function checkSubjGroup(){
             document.getElementById("subjectDropDown").innerHTML="<option value='music'>Music</option>"
             break;
         default:
-            console.log("no Option");
+            console.log("no Option")
     }
-    
 }
-

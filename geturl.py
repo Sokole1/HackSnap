@@ -6,6 +6,10 @@ def languageB(subject, level, month, year):
     return f"https://examsnap.io/files/index.php/s/IB_Past_Papers?path=%2FGroup%202%20-%20Language%20Acquisition%2F{subject}%20B%20{level}%2F{year}%20{month}%20Examination%20Session"
 
 def socials(subject, level, month, year):
+    if subject == "Buisness":
+        subject = "Business%20management"
+    if subject == "Itgs":
+        subject = "ITGS"
     return f"https://examsnap.io/files/index.php/s/IB_Past_Papers?path=%2FGroup%203%20-%20Individuals%20and%20Societies%2F{subject}%20{level}%2F{year}%20{month}%20Examination%20Session"
 
 def science(subject, level, month, year):

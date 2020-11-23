@@ -64,7 +64,9 @@ table, tr, th{
     width: 1500px;
     text-align: center;
 }
-
+h1{
+    text-align: center;
+}
 
 /*dropdowns
 #groupDropDown{

@@ -1,6 +1,6 @@
 function checkSubjGroup(){
     console.log(document.getElementById("groupDropDown").value);
-    document.getElementById("areaButton").disabled = true;
+    document.getElementById("areaButton").disabled = false;
     switch(document.getElementById("groupDropDown").value){
         case "Group 1 - Studies in Language and Literature":
             document.getElementById("subjectDropDown").innerHTML="<option value='English'>English</option>"
